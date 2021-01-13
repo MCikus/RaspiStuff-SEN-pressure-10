@@ -19,4 +19,5 @@ try:
  while True:
  print("{:>5.3f}".format(chan0.voltage))
  sleep(2.5)
-except KeyboardInte
+except KeyboardInterrupt:
+ GPIO.cleanup()
